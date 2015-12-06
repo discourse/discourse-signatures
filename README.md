@@ -2,32 +2,14 @@
 
 Felling nostalgic of old VBulletin days? Wanna spam and flame like it's 2000?
 
+![signature](https://cloud.githubusercontent.com/assets/1385470/11614719/c94ba4aa-9c31-11e5-9f32-67decaf0f3d3.png)
+
 **Install Discourse Signatures!**
-
-
-## Before Installation
-
-Since this is an early MVP the installation process is a bit, complicated.
-
-First you need to create 2 Custom User Fields. This is easy as follow:
-
-- Go to Admin -> Customize -> User Fields
-
-- Make then look like this:
-
-![user_fields](https://cloud.githubusercontent.com/assets/1385470/10153953/ecc5375a-6637-11e5-81a7-727deec3e41a.png)
-
-
-After this go to Settings -> Users -> `public user custom fields` and add the custom fields who hold sig info, like this:
-
-![public_fields](https://cloud.githubusercontent.com/assets/1385470/10153952/ecc38392-6637-11e5-9353-86e1832c2a1f.png)
-
-PS.: This can change if you have another user fields enabled. Maybe we get to set this by field name someday.
 
 
 ## Installation
 
-Now you proceed with a normal [installation of a plugin](https://meta.discourse.org/t/install-a-plugin/19157?u=falco).
+Proceed with a normal [installation of a plugin](https://meta.discourse.org/t/install-a-plugin/19157?u=falco).
 
 
 ## After Installation

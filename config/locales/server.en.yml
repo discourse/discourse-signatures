@@ -1,5 +1,3 @@
 en:
   site_settings:
     signatures_enabled: "Enable user-made signatures below posts?"
-    signatures_user_optin: "User field that contains the show signatures user option, like: signatures-view"
-    signatures_user_signature: "User field that contains the signature URL, like: signatures-image-url"

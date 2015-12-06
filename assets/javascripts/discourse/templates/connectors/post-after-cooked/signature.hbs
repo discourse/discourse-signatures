@@ -1,8 +1,6 @@
-{{#if Discourse.SiteSettings.signatures_enabled}}
-  {{#if user_show_signatures}}
-    {{#if user_signature}}
-      <hr>
-      <img src="{{user_signature}}">
-    {{/if}}
+{{#if showSignatures}}
+  {{#if user_signature_url}}
+    <hr>
+    <img src="{{user_signature_url}}" class="signature-img">
   {{/if}}
 {{/if}}

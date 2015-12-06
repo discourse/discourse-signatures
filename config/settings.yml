@@ -2,9 +2,3 @@ plugins:
   signatures_enabled:
     default: true
     client: true
-  signatures_user_optin:
-    default: signatures-view
-    client: true
-  signatures_user_signature:
-    default: signatures-image-url
-    client: true
