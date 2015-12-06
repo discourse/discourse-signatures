@@ -16,13 +16,13 @@ Proceed with a normal [installation of a plugin](https://meta.discourse.org/t/in
 
 You need to enable the plugins options for all users on Settings -> Plugins:
 
-![options_admin](https://cloud.githubusercontent.com/assets/1385470/10153950/ecaabefc-6637-11e5-8b46-b184512223ce.png)
+![signatures-admin](https://cloud.githubusercontent.com/assets/1385470/11616473/2c29715c-9c63-11e5-832d-6d171ca5ad79.png)
+
 
 
 And each user need to enable and select a signature on his/her profile:
 
-![options_user](https://cloud.githubusercontent.com/assets/1385470/10153949/eca93abe-6637-11e5-812c-f3439b255a6a.png)
-
+![signatures-preferencs](https://cloud.githubusercontent.com/assets/1385470/11616474/2c4426d2-9c63-11e5-88c6-93712ad0bb74.png)
 
 and thats it!
 
