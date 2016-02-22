@@ -12,14 +12,16 @@ function oldPluginCode() {
 function attachSignature(api) {
   api.includePostAttributes('user_signature_url');
 
-  api.decorateWidget('post-contents:after', (h, attrs) => {
+  api.decorateWidget('post-contents:after', dec => {
+
+    const attrs = dec.attrs;
     if (Ember.isEmpty(attrs.user_signature_url)) { return; }
 
     const currentUser = api.getCurrentUser();
     if (currentUser) {
       const enabled = currentUser.get('custom_fields.see_signatures');
       if (enabled) {
-        return [h('hr'), h('img.signature-img', { attributes: { src: attrs.user_signature_url } } )];
+        return [dec.h('hr'), dec.h('img.signature-img', { attributes: { src: attrs.user_signature_url } } )];
       }
     }
   });
