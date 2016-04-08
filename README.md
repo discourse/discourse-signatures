@@ -27,6 +27,10 @@ And each user need to enable and select a signature on his/her profile:
 and thats it!
 
 
+## Advanced Mode
+
+You can now enable **advanced mode** on the plugin settings and use a full blow post editor to create your signature! With text, multiple images, etc.
+
 ## About
 
 This is a work in progress! Feel free to use and ask questions here, or on [Meta](meta.discourse.org).
@@ -34,5 +38,4 @@ This is a work in progress! Feel free to use and ask questions here, or on [Meta
 ## TODO
 
 - Figure out a way so the user doens't have to refresh te browser to change the `see signatures` options.
-- Use d-editor instead of a simple text field. (Allow text sigs, multi-images, etc)
-- Get some sane defaults for CSS
+- Cache the cooked signatures

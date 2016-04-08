@@ -1,27 +1,25 @@
-import Post from 'discourse/models/post';
+import Preferences from 'discourse/controllers/preferences';
 import { withPluginApi } from 'discourse/lib/plugin-api';
-
-function oldPluginCode() {
-  Post.reopen({
-    showSignatures: function() {
-      return Discourse.User.currentProp("custom_fields.see_signatures");
-    }.property()
-  });
-}
+import RawHtml from 'discourse/widgets/raw-html';
 
 function attachSignature(api) {
-  api.includePostAttributes('user_signature_url');
+  api.includePostAttributes('user_signature');
 
   api.decorateWidget('post-contents:after', dec => {
 
     const attrs = dec.attrs;
-    if (Ember.isEmpty(attrs.user_signature_url)) { return; }
+    if (Ember.isEmpty(attrs.user_signature)) { return; }
 
     const currentUser = api.getCurrentUser();
+    const siteSettings = Discourse.SiteSettings; // TODO: change way to get the sitesettings
     if (currentUser) {
       const enabled = currentUser.get('custom_fields.see_signatures');
       if (enabled) {
-        return [dec.h('hr'), dec.h('img.signature-img', { attributes: { src: attrs.user_signature_url } } )];
+        if (siteSettings.signatures_advanced_mode) {
+          return [dec.h('hr'), dec.h('div', new RawHtml({html: `<div class='user-signature'>${Discourse.Markdown.cook(attrs.user_signature)}</div>`}))];
+        } else {
+          return [dec.h('hr'), dec.h('img.signature-img', {attributes: {src: attrs.user_signature}})];
+        }
       }
     }
   });
@@ -32,7 +30,16 @@ export default {
   initialize(container) {
     const siteSettings = container.lookup('site-settings:main');
     if (siteSettings.signatures_enabled) {
-      withPluginApi('0.1', attachSignature, { noApi: oldPluginCode });
+      withPluginApi('0.1', attachSignature);
+
+      Preferences.reopen({
+        signaturesEnabled: function() {
+          return Discourse.SiteSettings.signatures_enabled;
+        }.property(),
+        signaturesAdvancedMode: function() {
+          return Discourse.SiteSettings.signatures_advanced_mode;
+        }.property()
+      });
     }
   }
 };

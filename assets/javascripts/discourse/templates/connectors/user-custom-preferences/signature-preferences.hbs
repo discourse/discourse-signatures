@@ -1,10 +1,22 @@
-<div class='controls'>
-    <label class='checkbox-label'>
-      {{input type="checkbox" checked=controller.model.custom_fields.see_signatures}}
-        See user signatures below posts
-    </label>
-    <label class='text-label'>
-      {{input type="text" value=controller.model.custom_fields.signature_url}}
-        Signature URL Image
-    </label>
-</div>
+{{#if signaturesEnabled}}
+  <div class="control-group signatures">
+    <label class="control-label">Signatures</label>
+    <div class="controls">
+      <label class='checkbox-label'>
+        {{input type="checkbox" checked=controller.model.custom_fields.see_signatures}}
+          See user signatures below posts
+      </label>
+    </div>
+    <div class="controls">
+      <label>Signature</label>
+      {{#if signaturesAdvancedMode}}
+        {{d-editor value=controller.model.custom_fields.signature_raw showUploadModal="showUploadModal"}}
+      {{else}}
+        <label class='text-label'>
+          {{input type="text" value=controller.model.custom_fields.signature_url}}
+        </label>
+      {{/if}}
+    </div>
+    <div class="instructions">Signature Code</div>
+  </div>
+{{/if}}
