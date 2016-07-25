@@ -1,0 +1,6 @@
+pt:
+  site_settings:
+    signatures_enabled: "Permitir que os utilizadores criem assinaturas para uso no rodapéas mensagens?"
+    signatures_advanced_mode: "Permitir o uso de um editor completo para criar assinaturas? Alteraç implica reset das assinaturas existentes e requer restart do servidor"
+
+
