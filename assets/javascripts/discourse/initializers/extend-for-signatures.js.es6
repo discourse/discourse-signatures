@@ -1,6 +1,7 @@
 import Preferences from 'discourse/controllers/preferences';
 import { withPluginApi } from 'discourse/lib/plugin-api';
 import RawHtml from 'discourse/widgets/raw-html';
+import { cook } from 'discourse/lib/text';
 
 function attachSignature(api) {
   api.includePostAttributes('user_signature');
@@ -16,7 +17,7 @@ function attachSignature(api) {
       const enabled = currentUser.get('custom_fields.see_signatures');
       if (enabled) {
         if (siteSettings.signatures_advanced_mode) {
-          return [dec.h('hr'), dec.h('div', new RawHtml({html: `<div class='user-signature'>${Discourse.Markdown.cook(attrs.user_signature)}</div>`}))];
+          return [dec.h('hr'), dec.h('div', new RawHtml({html: `<div class='user-signature'>${cook(attrs.user_signature)}</div>`}))];
         } else {
           return [dec.h('hr'), dec.h('img.signature-img', {attributes: {src: attrs.user_signature}})];
         }
