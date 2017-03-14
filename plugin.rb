@@ -19,9 +19,9 @@ after_initialize do
   if SiteSetting.signatures_enabled then
     add_to_serializer(:post, :user_signature, false) {
       if SiteSetting.signatures_advanced_mode then
-        object.user.custom_fields['signature_raw']
+        object.user.custom_fields['signature_raw'] if object.user
       else
-        object.user.custom_fields['signature_url']
+        object.user.custom_fields['signature_url'] if object.user
       end
     }
 
