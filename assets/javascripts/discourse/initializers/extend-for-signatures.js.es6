@@ -1,4 +1,3 @@
-import Preferences from 'discourse/controllers/preferences';
 import { withPluginApi } from 'discourse/lib/plugin-api';
 import RawHtml from 'discourse/widgets/raw-html';
 import { cook } from 'discourse/lib/text';
@@ -32,15 +31,6 @@ export default {
     const siteSettings = container.lookup('site-settings:main');
     if (siteSettings.signatures_enabled) {
       withPluginApi('0.1', attachSignature);
-
-      Preferences.reopen({
-        signaturesEnabled: function() {
-          return Discourse.SiteSettings.signatures_enabled;
-        }.property(),
-        signaturesAdvancedMode: function() {
-          return Discourse.SiteSettings.signatures_advanced_mode;
-        }.property()
-      });
     }
   }
 };
