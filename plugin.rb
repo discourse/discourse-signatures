@@ -37,7 +37,7 @@ after_initialize do
 
   # This is the code responsible for cooking a new advanced mode sig on user update
   DiscourseEvent.on(:user_updated) do |user|
-    if SiteSetting.signatures_enabled? && SiteSetting.signatures_advanced_mode
+    if SiteSetting.signatures_enabled? && SiteSetting.signatures_advanced_mode && user.custom_fields['signature_raw']
       cooked_sig = PrettyText.cook(user.custom_fields['signature_raw'], omit_nofollow: user.has_trust_level?(TrustLevel[3]) && !SiteSetting.tl3_links_no_follow)
       # avoid infinite recurrsion
       if cooked_sig != user.custom_fields['signature_cooked']
