@@ -2,7 +2,7 @@
 # about: A plugin to get that nostalgia signatures in Discourse Foruns
 # version: 2.0.0
 # author: Rafael Silva <xfalcox@gmail.com>
-# url: https://github.com/xfalcox/discourse-signatures
+# url: https://github.com/discourse/discourse-signatures
 
 enabled_site_setting :signatures_enabled
 
