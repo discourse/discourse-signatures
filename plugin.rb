@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # name: discourse-signatures
 # about: A plugin to get that nostalgia signatures in Discourse Foruns
 # version: 2.0.0
