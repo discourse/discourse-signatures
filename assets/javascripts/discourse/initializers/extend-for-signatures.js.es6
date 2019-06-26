@@ -20,9 +20,7 @@ function attachSignature(api, siteSettings) {
             dec.h(
               "div",
               new RawHtml({
-                html: `<div class='user-signature'>${
-                  attrs.user_signature
-                }</div>`
+                html: `<div class='user-signature'>${attrs.user_signature}</div>`
               })
             )
           ];
