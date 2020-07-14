@@ -19,8 +19,15 @@ after_initialize do
   User.register_custom_field_type('signature_raw', :text)
 
   register_editable_user_custom_field [:see_signatures, :signature_url, :signature_raw]
-  whitelist_public_user_custom_field :signature_cooked
-  whitelist_public_user_custom_field :signature_url
+
+  # TODO Drop after Discourse 2.6.0 release
+  if respond_to?(:whitelist_public_user_custom_field)
+    whitelist_public_user_custom_field :signature_cooked
+    whitelist_public_user_custom_field :signature_url
+  else
+    allow_public_user_custom_field :signature_cooked
+    allow_public_user_custom_field :signature_url
+  end
 
   add_to_serializer(:post, :user_signature) {
     if SiteSetting.signatures_advanced_mode then
