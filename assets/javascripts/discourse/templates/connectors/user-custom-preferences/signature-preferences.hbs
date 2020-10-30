@@ -1,15 +1,15 @@
 {{#if siteSettings.signatures_enabled}}
   <div class="control-group signatures">
-    <label class="control-label">Enable Signatures</label>
+    <label class="control-label">{{i18n "signatures.enable_signatures"}}</label>
     <div class="controls">
       <label class='checkbox-label'>
         {{input type="checkbox" checked=model.custom_fields.see_signatures}}
-          See user signatures below posts
+        {{i18n "signatures.show_signatures"}}
       </label>
     </div>
   </div>
   <div class="control-group signatures">
-    <label class="control-label">My Signature</label>
+    <label class="control-label">{{i18n "signatures.my_signature"}}</label>
     <div class="controls bio-composer input-xxlarge">
       {{#if siteSettings.signatures_advanced_mode}}
         {{d-editor value=model.custom_fields.signature_raw showUploadModal="showUploadModal"}}
