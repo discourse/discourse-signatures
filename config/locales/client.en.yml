@@ -1,0 +1,6 @@
+en:
+  js:
+    signatures:
+      enable_signatures: "Enable Signatures"
+      show_signatures: "See user signatures below posts"
+      my_signature: "My Signature"
