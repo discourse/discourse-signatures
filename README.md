@@ -1,5 +1,7 @@
 # Discourse Signatures
 
+https://meta.discourse.org/t/discourse-signatures/42263
+
 Felling nostalgic of old VBulletin days? Wanna spam and flame like it's 2000?
 
 ![signature](https://cloud.githubusercontent.com/assets/1385470/11614719/c94ba4aa-9c31-11e5-9f32-67decaf0f3d3.png)
