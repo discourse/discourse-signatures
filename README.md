@@ -35,7 +35,7 @@ You can now enable **advanced mode** on the plugin settings and use a full blow 
 
 ## About
 
-This is a work in progress! Feel free to use and ask questions here, or on [Meta](meta.discourse.org).
+This is a work in progress! Feel free to use and ask questions here, or on [Discourse Meta](https://meta.discourse.org/t/discourse-signatures/42263).
 
 ## TODO
 
