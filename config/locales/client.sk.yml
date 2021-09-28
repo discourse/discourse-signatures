@@ -4,9 +4,4 @@
 # To work with us on translations, join this project:
 # https://translate.discourse.org/
 
-it:
-  js:
-    signatures:
-      enable_signatures: "Abilita le firme"
-      show_signatures: "Mostra le firme degli utenti sotto ai post"
-      my_signature: "La mia firma"
+sk:
