@@ -5,3 +5,6 @@
 # https://translate.discourse.org/
 
 sv:
+  site_settings:
+    signatures_enabled: "Aktivera användarskapade signaturer under inlägg?"
+    signatures_advanced_mode: "Låt användare använda en komplett inläggsredigerare för att skapa signaturer. ÅTERSTÄLLER alla befintliga signaturer. Kräver omstart av servern"
