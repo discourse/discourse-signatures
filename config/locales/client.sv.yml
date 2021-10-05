@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 sv:
+  js:
+    signatures:
+      enable_signatures: "Aktivera signaturer"
+      show_signatures: "Se användarsignaturer under inlägg"
+      my_signature: "Min signatur"
