@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # name: discourse-signatures
-# about: A plugin to get that nostalgia signatures in Discourse Foruns
+# about: Adds signatures to Discourse posts
 # version: 2.0.0
 # author: Rafael Silva <xfalcox@gmail.com>
 # url: https://github.com/discourse/discourse-signatures
