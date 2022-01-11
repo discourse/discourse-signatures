@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 ar:
+  js:
+    signatures:
+      enable_signatures: "تفعيل التوقيعات"
+      show_signatures: "عرض توقيعات المستخدمين أسفل المنشورات"
+      my_signature: "توقيعي"

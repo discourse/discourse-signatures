@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 ru:
+  js:
+    signatures:
+      enable_signatures: "Включить подписи"
+      show_signatures: "Видеть подписи пользователей под записями"
+      my_signature: "Моя подпись"

@@ -6,5 +6,5 @@
 
 pt_BR:
   site_settings:
-    signatures_enabled: "Permitir que os usuários criem assinaturas que aparecem abaixo das mensagens?"
-    signatures_advanced_mode: "Permitir o uso de um editor completo para criar assinaturas? Alteração implica no reset das assinaturas existentes e requer restart do servidor"
+    signatures_enabled: "Permitir que usuários(as) criem assinaturas que aparecem abaixo das mensagens?"
+    signatures_advanced_mode: "Permitir o uso de um editor completo para criar assinaturas? A alteração implica na redefinição das assinaturas existentes e requer a reinicialização do servidor"

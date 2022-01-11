@@ -8,5 +8,5 @@ it:
   js:
     signatures:
       enable_signatures: "Abilita le firme"
-      show_signatures: "Mostra le firme degli utenti sotto ai post"
+      show_signatures: "Mostra le firme degli utenti sotto i messaggi"
       my_signature: "La mia firma"

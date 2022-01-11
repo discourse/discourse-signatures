@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 pt:
+  js:
+    signatures:
+      enable_signatures: "Ativar assinaturas"
+      show_signatures: "Exibir assinaturas do usuário(a) abaixo das postagens"
+      my_signature: "Minha assinatura"

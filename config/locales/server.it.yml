@@ -6,5 +6,5 @@
 
 it:
   site_settings:
-    signatures_enabled: "Abilita le firme degli utenti sotto i messaggi?"
-    signatures_advanced_mode: "Permetti agli utenti di usare un editor completo per creare le firme. AZZERA tutte le firme esistenti. E' necessario un riavvio del server"
+    signatures_enabled: "Abilitare le firme degli utenti sotto i messaggi?"
+    signatures_advanced_mode: "Permetti agli utenti di usare un editor di messaggi completo per creare le firme. CANCELLA tutte le firme esistenti e richiede un riavvio del server"
