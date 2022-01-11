@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 ja:
+  js:
+    signatures:
+      enable_signatures: "署名を有効にする"
+      show_signatures: "投稿下のユーザー署名を参照"
+      my_signature: "自分の署名"
