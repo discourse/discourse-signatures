@@ -5,3 +5,6 @@ plugins:
   signatures_advanced_mode:
     default: false
     client: true
+  signatures_visible_by_default:
+    default: false
+    client: true

@@ -2,7 +2,7 @@
 
 # name: discourse-signatures
 # about: Adds signatures to Discourse posts
-# version: 2.0.0
+# version: 2.1.0
 # author: Rafael Silva <xfalcox@gmail.com>
 # url: https://github.com/discourse/discourse-signatures
 
@@ -17,6 +17,19 @@ after_initialize do
   User.register_custom_field_type('see_signatures', :boolean)
   User.register_custom_field_type('signature_url', :text)
   User.register_custom_field_type('signature_raw', :text)
+
+  # add to class and serializer to allow for default value for the setting
+  add_to_class(:user, :see_signatures) do
+    if custom_fields['see_signatures'] != nil
+      custom_fields['see_signatures']
+    else
+      SiteSetting.signatures_visible_by_default
+    end
+  end
+
+  add_to_serializer(:user, :see_signatures) do
+    object.see_signatures
+  end
 
   register_editable_user_custom_field [:see_signatures, :signature_url, :signature_raw]
 
