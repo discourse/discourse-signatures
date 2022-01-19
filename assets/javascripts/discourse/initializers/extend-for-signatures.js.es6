@@ -11,7 +11,7 @@ function attachSignature(api, siteSettings) {
     }
 
     const currentUser = api.getCurrentUser();
-    var enabled;
+    let enabled;
 
     if (currentUser) {
       enabled =
