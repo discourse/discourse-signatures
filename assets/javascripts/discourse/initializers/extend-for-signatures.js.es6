@@ -14,7 +14,9 @@ function attachSignature(api, siteSettings) {
     var enabled;
 
     if (currentUser) {
-      enabled = currentUser.get("custom_fields.see_signatures") ?? siteSettings.signatures_visible_by_default;
+      enabled =
+        currentUser.get("custom_fields.see_signatures") ??
+        siteSettings.signatures_visible_by_default;
     } else {
       enabled = siteSettings.signatures_visible_by_default;
     }
@@ -41,15 +43,18 @@ function attachSignature(api, siteSettings) {
   });
 }
 
-function addSetting(api, siteSettings) {
+function addSetting(api) {
   api.modifyClass("controller:preferences/profile", {
     actions: {
       save() {
-        this.set("model.custom_fields.see_signatures", this.get("model.see_signatures"));
-        this.get("saveAttrNames").push("custom_fields")
+        this.set(
+          "model.custom_fields.see_signatures",
+          this.get("model.see_signatures")
+        );
+        this.get("saveAttrNames").push("custom_fields");
         this._super();
-      }
-    }
+      },
+    },
   });
 }
 
