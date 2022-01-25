@@ -8,3 +8,4 @@ fr:
   site_settings:
     signatures_enabled: "Activer les signatures créées par les utilisateurs sous les messages ?"
     signatures_advanced_mode: "Laisse les utilisateurs utiliser un éditeur de message complet pour créer des signatures. Cette opération réinitialise toutes les signatures existantes et nécessite un redémarrage du serveur"
+    signatures_visible_by_default: "Rendre les signatures visibles par défaut. Cela rend également les signatures visibles pour les visiteurs anonymes."

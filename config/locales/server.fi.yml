@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 fi:
+  site_settings:
+    signatures_enabled: "Otetaanko käyttäjien allekirjoitukset viestien alla käyttöön?"
+    signatures_advanced_mode: "Anna käyttäjien käyttää täyttä tekstieditoria allekirjoitusten luomiseen. NOLLAA kaikki olemassa olevat allekirjoitukset. Edellyttää palvelimen uudelleenkäynnistystä."
+    signatures_visible_by_default: "Aseta allekirjoitukset näkyviin oletusarvoisesti. Näin allekirjoitukset näkyvät myös anonyymeille vierailijoille."
