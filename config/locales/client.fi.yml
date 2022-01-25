@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 fi:
+  js:
+    signatures:
+      enable_signatures: "Ota allekirjoitukset käyttöön"
+      show_signatures: "Näytä käyttäjien allekirjoitukset viestien alla"
+      my_signature: "Allekirjoitukseni"

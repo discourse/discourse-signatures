@@ -8,3 +8,4 @@ zh_CN:
   site_settings:
     signatures_enabled: "在帖子下方启用用户签名？"
     signatures_advanced_mode: "让用户使用完整的帖子编辑器来创建签名。这将重置所有现有签名。需要重启服务器"
+    signatures_visible_by_default: "默认情况下使签名可见。这使匿名访问者也可以看到签名。"

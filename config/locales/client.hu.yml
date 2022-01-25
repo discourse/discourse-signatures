@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 hu:
+  js:
+    signatures:
+      enable_signatures: "Aláírások engedélyezése"
+      show_signatures: "Felhasználói aláírások megjelenítése a bejegyzések alatt"
+      my_signature: "Saját aláírás"
