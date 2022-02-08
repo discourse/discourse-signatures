@@ -8,3 +8,4 @@ ja:
   site_settings:
     signatures_enabled: "投稿の下にユーザー作成署名を有効にしますか？"
     signatures_advanced_mode: "ユーザーがフルエディターで署名を作成できるようにします。すべての既存の署名をリセットします。サーバーを再起動する必要があります"
+    signatures_visible_by_default: "デフォルトで署名を表示します。これにより、匿名の訪問者にも署名が表示されるようになります。"
