@@ -1,7 +1,10 @@
 {
+  "name": "discourse-signatures",
+  "version": "2.1.0",
+  "repository": "https://github.com/discourse/discourse-signatures",
   "author": "Discourse",
   "license": "MIT",
   "devDependencies": {
-    "eslint-config-discourse": "1.1.9"
+    "eslint-config-discourse": "^3.0.0"
   }
 }

@@ -5,6 +5,7 @@
 # version: 2.1.0
 # author: Rafael Silva <xfalcox@gmail.com>
 # url: https://github.com/discourse/discourse-signatures
+# transpile_js: true
 
 enabled_site_setting :signatures_enabled
 
@@ -13,7 +14,6 @@ DiscoursePluginRegistry.serialized_current_user_fields << "signature_url"
 DiscoursePluginRegistry.serialized_current_user_fields << "signature_raw"
 
 after_initialize do
-
   User.register_custom_field_type('see_signatures', :boolean)
   User.register_custom_field_type('signature_url', :text)
   User.register_custom_field_type('signature_raw', :text)
@@ -33,22 +33,16 @@ after_initialize do
 
   register_editable_user_custom_field [:see_signatures, :signature_url, :signature_raw]
 
-  # TODO Drop after Discourse 2.6.0 release
-  if respond_to?(:allow_public_user_custom_field)
-    allow_public_user_custom_field :signature_cooked
-    allow_public_user_custom_field :signature_url
-  else
-    whitelist_public_user_custom_field :signature_cooked
-    whitelist_public_user_custom_field :signature_url
-  end
+  allow_public_user_custom_field :signature_cooked
+  allow_public_user_custom_field :signature_url
 
-  add_to_serializer(:post, :user_signature) {
-    if SiteSetting.signatures_advanced_mode then
+  add_to_serializer(:post, :user_signature) do
+    if SiteSetting.signatures_advanced_mode
       object.user.custom_fields['signature_cooked'] if object.user
     else
       object.user.custom_fields['signature_url'] if object.user
     end
-  }
+  end
 
   # This is the code responsible for cooking a new advanced mode sig on user update
   DiscourseEvent.on(:user_updated) do |user|

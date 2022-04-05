@@ -1,12 +1,13 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
 import RawHtml from "discourse/widgets/raw-html";
+import { isEmpty } from "@ember/utils";
 
 function attachSignature(api, siteSettings) {
   api.includePostAttributes("user_signature");
 
   api.decorateWidget("post-contents:after-cooked", (dec) => {
     const attrs = dec.attrs;
-    if (Ember.isEmpty(attrs.user_signature)) {
+    if (isEmpty(attrs.user_signature)) {
       return;
     }
 
