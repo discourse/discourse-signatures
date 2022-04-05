@@ -45,6 +45,8 @@ function attachSignature(api, siteSettings) {
 
 function addSetting(api) {
   api.modifyClass("controller:preferences/profile", {
+    pluginId: "discourse-signatures",
+
     actions: {
       save() {
         this.set(
