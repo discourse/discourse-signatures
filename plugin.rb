@@ -57,5 +57,4 @@ after_initialize do
   end
 end
 
-register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/signature-preferences.hbs"
 register_asset "stylesheets/common/signatures.scss"
