@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 nl:
+  js:
+    signatures:
+      enable_signatures: "Handtekeningen inschakelen"
+      show_signatures: "Zie handtekeningen van gebruikers onder berichten"
+      my_signature: "Mijn handtekening"
