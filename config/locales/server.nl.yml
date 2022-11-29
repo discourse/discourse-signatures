@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 nl:
+  site_settings:
+    signatures_enabled: "Door gebruikers gemaakte handtekeningen onder berichten inschakelen?"
+    signatures_advanced_mode: "Laat gebruikers een complete berichteditor gebruiken om handtekeningen te maken. RESET alle bestaande handtekeningen. Vereist een herstart van de server"
+    signatures_visible_by_default: "Maak handtekeningen standaard zichtbaar. Dit maakt handtekeningen ook zichtbaar voor anonieme bezoekers."
