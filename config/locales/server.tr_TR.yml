@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  site_settings:
+    signatures_enabled: "Gönderilerin altında kullanıcıların hazırladığı imzalar etkinleştirilsin mi?"
+    signatures_advanced_mode: "Kullanıcıların imza oluşturmak için tam yazı editörü kullanmasına izin verin. Mevcut tüm imzaları SIFIRLAR. Sunucunun yeniden başlatılması gerekir"
+    signatures_visible_by_default: "İmzaları varsayılan olarak görünür yapın. Bu, imzaları anonim ziyaretçiler için de görünür hale getirir."

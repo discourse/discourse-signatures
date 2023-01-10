@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  js:
+    signatures:
+      enable_signatures: "İmzaları Etkinleştir"
+      show_signatures: "Gönderilerin altındaki kullanıcı imzalarına bakın"
+      my_signature: "İmzam"
