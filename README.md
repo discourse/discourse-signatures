@@ -4,7 +4,7 @@ https://meta.discourse.org/t/discourse-signatures/42263
 
 Felling nostalgic of old VBulletin days? Wanna spam and flame like it's 2000?
 
-![signature](https://cloud.githubusercontent.com/assets/1385470/11614719/c94ba4aa-9c31-11e5-9f32-67decaf0f3d3.png)
+![signature](https://user-images.githubusercontent.com/5862206/214549988-f3aaefc6-aa25-4d98-848d-2e1086542eeb.png)
 
 **Install Discourse Signatures!**
 
@@ -16,11 +16,11 @@ Proceed with a normal [installation of a plugin](https://meta.discourse.org/t/in
 
 You need to enable the plugins options for all users on Settings -> Plugins:
 
-![signatures-admin](https://cloud.githubusercontent.com/assets/1385470/11616473/2c29715c-9c63-11e5-832d-6d171ca5ad79.png)
+![enable_plugin](https://user-images.githubusercontent.com/5862206/214550041-20deb06a-0d0a-4ceb-93bd-97b01017bc38.png)
 
 And each user need to enable and select a signature on his/her profile:
 
-![signatures-preferences](https://cloud.githubusercontent.com/assets/1385470/11616474/2c4426d2-9c63-11e5-88c6-93712ad0bb74.png)
+![image](https://user-images.githubusercontent.com/5862206/214550178-a4f1caeb-0dd5-4b08-9d98-c292b0813c15.png)
 
 and thats it!
 
