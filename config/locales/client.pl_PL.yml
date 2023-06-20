@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 pl_PL:
+  js:
+    signatures:
+      enable_signatures: "Włącz sygnatury"
+      show_signatures: "Zobacz sygnatury użytkowników pod postami"
+      my_signature: "Moja sygnatura"
