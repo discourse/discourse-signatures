@@ -1,5 +1,5 @@
 en:
   site_settings:
     signatures_enabled: "Enable user-made signatures below posts?"
-    signatures_advanced_mode: "Let users use a full blow post editor to create signatures. RESETS all existing signatures."
+    signatures_advanced_mode: "Let users use a full blown post editor to create signatures. RESETS all existing signatures."
     signatures_visible_by_default: "Make signatures visible by default. This makes signatures visible for anonymous visitors as well."
