@@ -7,5 +7,4 @@
 pl_PL:
   site_settings:
     signatures_enabled: "Włącz sygnatury wykonane przez użytkowników pod postami?"
-    signatures_advanced_mode: "Pozwól użytkownikom korzystać z pełnego edytora postów do tworzenia sygnatur. RESETUJE wszystkie istniejące sygnatury. Wymaga restartu serwera"
     signatures_visible_by_default: "Ustaw domyślnie widoczność sygnatur. Dzięki temu sygnatury są widoczne również dla anonimowych gości."

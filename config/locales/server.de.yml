@@ -7,5 +7,4 @@
 de:
   site_settings:
     signatures_enabled: "Von Benutzern erstellte Signaturen unter Beiträgen aktivieren?"
-    signatures_advanced_mode: "Erlaubt es Benutzern, einen vollständigen Beitragseditor zu verwenden, um Signaturen zu erstellen. Setzt alle bestehenden Signaturen ZURÜCK. Erfordert einen Server-Neustart"
     signatures_visible_by_default: "Signaturen standardmäßig sichtbar machen. Dadurch sind die Signaturen auch für anonyme Besucher sichtbar."

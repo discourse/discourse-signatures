@@ -7,5 +7,4 @@
 it:
   site_settings:
     signatures_enabled: "Abilitare le firme degli utenti sotto i messaggi?"
-    signatures_advanced_mode: "Permetti agli utenti di usare un editor di messaggi completo per creare le firme. CANCELLA tutte le firme esistenti e richiede un riavvio del server"
     signatures_visible_by_default: "Rendi visibili le firme per impostazione predefinita. In questo modo le firme saranno visibili anche per i visitatori anonimi."
