@@ -2,6 +2,7 @@
 
 # name: discourse-signatures
 # about: Adds signatures to Discourse posts
+# meta_topic_id: 42263
 # version: 2.1.0
 # author: Rafael Silva <xfalcox@gmail.com>
 # url: https://github.com/discourse/discourse-signatures
