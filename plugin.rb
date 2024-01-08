@@ -14,9 +14,9 @@ DiscoursePluginRegistry.serialized_current_user_fields << "signature_url"
 DiscoursePluginRegistry.serialized_current_user_fields << "signature_raw"
 
 after_initialize do
-  User.register_custom_field_type("see_signatures", :boolean)
-  User.register_custom_field_type("signature_url", :text)
-  User.register_custom_field_type("signature_raw", :text)
+  register_user_custom_field_type("see_signatures", :boolean)
+  register_user_custom_field_type("signature_url", :string, max_length: 32000)
+  register_user_custom_field_type("signature_raw", :string, max_length: 1000)
 
   # add to class and serializer to allow for default value for the setting
   add_to_class(:user, :see_signatures) do
