@@ -1,6 +1,6 @@
+import { isEmpty } from "@ember/utils";
 import { withPluginApi } from "discourse/lib/plugin-api";
 import RawHtml from "discourse/widgets/raw-html";
-import { isEmpty } from "@ember/utils";
 
 function attachSignature(api, siteSettings) {
   api.includePostAttributes("user_signature");
@@ -64,7 +64,7 @@ function addSetting(api) {
 export default {
   name: "extend-for-signatures",
   initialize(container) {
-    const siteSettings = container.lookup("site-settings:main");
+    const siteSettings = container.lookup("service:site-settings");
     if (siteSettings.signatures_enabled) {
       withPluginApi("0.1", (api) => attachSignature(api, siteSettings));
       withPluginApi("0.1", (api) => addSetting(api, siteSettings));

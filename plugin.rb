@@ -6,7 +6,6 @@
 # version: 2.1.0
 # author: Rafael Silva <xfalcox@gmail.com>
 # url: https://github.com/discourse/discourse-signatures
-# transpile_js: true
 
 enabled_site_setting :signatures_enabled
 
