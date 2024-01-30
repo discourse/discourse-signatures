@@ -7,4 +7,5 @@
 pt_BR:
   site_settings:
     signatures_enabled: "Permitir que usuários(as) criem assinaturas que aparecem abaixo das mensagens?"
+    signatures_advanced_mode: "Permitir que os(as) usuários(as) usem um editor de postagens completo para criar assinaturas. Todas as assinaturas existentes serão REDEFINIDAS."
     signatures_visible_by_default: "Torne assinaturas visíveis por padrão. Isso torna as assinaturas visíveis para visitantes anônimos também."

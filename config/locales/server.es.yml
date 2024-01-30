@@ -7,4 +7,5 @@
 es:
   site_settings:
     signatures_enabled: "¿Activar que aparezcan firmas de los usuarios debajo de sus publicaciones?"
+    signatures_advanced_mode: "Permite a los usuarios utilizar un editor de publicaciones completo para crear firmas. REINICIA todas las firmas existentes."
     signatures_visible_by_default: "Hace que las firmas sean visibles por defecto. Esto hace que las firmas también sean visibles para los visitantes anónimos."
