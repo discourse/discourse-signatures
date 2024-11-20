@@ -1,18 +1,18 @@
-{{#if siteSettings.signatures_enabled}}
+{{#if this.siteSettings.signatures_enabled}}
   <div class="control-group signatures">
     <label class="control-label">{{i18n "signatures.enable_signatures"}}</label>
     <div class="controls">
       <label class="checkbox-label">
-        <Input @type="checkbox" @checked={{model.see_signatures}} />
+        <Input @type="checkbox" @checked={{this.model.see_signatures}} />
         {{i18n "signatures.show_signatures"}}
       </label>
     </div>
   </div>
   <div class="control-group signatures">
     <label class="control-label">{{i18n "signatures.my_signature"}}</label>
-    {{#if siteSettings.signatures_advanced_mode}}
+    {{#if this.siteSettings.signatures_advanced_mode}}
       <DEditor
-        @value={{model.custom_fields.signature_raw}}
+        @value={{this.model.custom_fields.signature_raw}}
         @showUploadModal="showUploadModal"
       />
     {{else}}
@@ -20,7 +20,7 @@
         @type="text"
         class="input-xxlarge"
         placeholder={{i18n "signatures.signature_placeholder"}}
-        @value={{model.custom_fields.signature_url}}
+        @value={{this.model.custom_fields.signature_url}}
       />
     {{/if}}
   </div>
