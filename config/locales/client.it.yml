@@ -10,3 +10,4 @@ it:
       enable_signatures: "Abilita le firme"
       show_signatures: "Mostra le firme degli utenti sotto i messaggi"
       my_signature: "La mia firma"
+      signature_placeholder: "Un URL valido per un'immagine"

@@ -10,3 +10,4 @@ fr:
       enable_signatures: "Activer les signatures"
       show_signatures: "Voir les signatures des utilisateurs sous les messages"
       my_signature: "Ma signature"
+      signature_placeholder: "Une URL valide vers une image"

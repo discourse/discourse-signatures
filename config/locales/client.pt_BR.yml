@@ -10,3 +10,4 @@ pt_BR:
       enable_signatures: "Ativar assinaturas"
       show_signatures: "Exibir assinaturas de usuário(a) abaixo das postagens"
       my_signature: "Minha assinatura"
+      signature_placeholder: "URL válida para uma imagem"

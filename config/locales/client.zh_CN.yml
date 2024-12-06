@@ -10,3 +10,4 @@ zh_CN:
       enable_signatures: "启用签名"
       show_signatures: "在帖子下方显示用户签名"
       my_signature: "我的签名"
+      signature_placeholder: "图像的有效 URL"

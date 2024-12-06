@@ -10,3 +10,4 @@ es:
       enable_signatures: "Habilitar firmas"
       show_signatures: "Ver las firmas de los usuarios debajo de las publicaciones"
       my_signature: "Mi firma"
+      signature_placeholder: "Una URL válida para una imagen"
