@@ -10,3 +10,4 @@ ru:
       enable_signatures: "Включить подписи"
       show_signatures: "Отображать подписи пользователей под записями"
       my_signature: "Моя подпись"
+      signature_placeholder: "Действительный URL-адрес изображения"

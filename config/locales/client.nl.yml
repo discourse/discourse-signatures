@@ -10,3 +10,4 @@ nl:
       enable_signatures: "Handtekeningen inschakelen"
       show_signatures: "Zie handtekeningen van gebruikers onder berichten"
       my_signature: "Mijn handtekening"
+      signature_placeholder: "Een geldige URL naar een afbeelding"
