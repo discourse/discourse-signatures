@@ -10,3 +10,4 @@ ar:
       enable_signatures: "تفعيل التوقيعات"
       show_signatures: "عرض توقيعات المستخدمين أسفل المنشورات"
       my_signature: "توقيعي"
+      signature_placeholder: "عنوان URL صالح لصورة"
