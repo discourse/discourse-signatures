@@ -1,10 +1,4 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
-zh_CN:
+zh-CN:
   site_settings:
     signatures_enabled: "在帖子下方启用用户签名？"
     signatures_advanced_mode: "让用户使用功能齐全的帖子编辑器来创建签名。重置所有现有签名。"
