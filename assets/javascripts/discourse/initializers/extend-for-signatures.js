@@ -1,3 +1,4 @@
+import { action } from "@ember/object";
 import { isEmpty } from "@ember/utils";
 import { withPluginApi } from "discourse/lib/plugin-api";
 import RawHtml from "discourse/widgets/raw-html";
@@ -45,20 +46,21 @@ function attachSignature(api, siteSettings) {
 }
 
 function addSetting(api) {
-  api.modifyClass("controller:preferences/profile", {
-    pluginId: "discourse-signatures",
-
-    actions: {
-      save() {
-        this.set(
-          "model.custom_fields.see_signatures",
-          this.get("model.see_signatures")
-        );
-        this.get("saveAttrNames").push("custom_fields");
-        this._super();
-      },
-    },
-  });
+  api.modifyClass(
+    "controller:preferences/profile",
+    (Superclass) =>
+      class extends Superclass {
+        @action
+        save() {
+          this.set(
+            "model.custom_fields.see_signatures",
+            this.get("model.see_signatures")
+          );
+          this.get("saveAttrNames").push("custom_fields");
+          super.save();
+        }
+      }
+  );
 }
 
 export default {
