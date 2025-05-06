@@ -10,3 +10,4 @@ pl_PL:
       enable_signatures: "Włącz sygnatury"
       show_signatures: "Zobacz sygnatury użytkowników pod postami"
       my_signature: "Moja sygnatura"
+      signature_placeholder: "Prawidłowy adres URL do obrazu"
