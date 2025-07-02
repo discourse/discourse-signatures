@@ -1,11 +1,21 @@
 import { action } from "@ember/object";
 import { isEmpty } from "@ember/utils";
+import { withSilencedDeprecations } from "discourse/lib/deprecated";
 import { withPluginApi } from "discourse/lib/plugin-api";
 import RawHtml from "discourse/widgets/raw-html";
+import PostSignature from "../components/post-signature";
 
-function attachSignature(api, siteSettings) {
-  api.includePostAttributes("user_signature");
+function customizePost(api, siteSettings) {
+  api.addTrackedPostProperties("user_signature");
 
+  api.renderAfterWrapperOutlet("post-content-cooked-html", PostSignature);
+
+  withSilencedDeprecations("discourse.post-stream-widget-overrides", () =>
+    customizeWidgetPost(api, siteSettings)
+  );
+}
+
+function customizeWidgetPost(api, siteSettings) {
   api.decorateWidget("post-contents:after-cooked", (dec) => {
     const attrs = dec.attrs;
     if (isEmpty(attrs.user_signature)) {
@@ -68,8 +78,10 @@ export default {
   initialize(container) {
     const siteSettings = container.lookup("service:site-settings");
     if (siteSettings.signatures_enabled) {
-      withPluginApi("0.1", (api) => attachSignature(api, siteSettings));
-      withPluginApi("0.1", (api) => addSetting(api, siteSettings));
+      withPluginApi((api) => {
+        customizePost(api, siteSettings);
+        addSetting(api, siteSettings);
+      });
     }
   },
 };
