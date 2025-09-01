@@ -29,7 +29,9 @@ after_initialize do
 
   add_to_serializer(:user, :see_signatures) { object.see_signatures }
 
-  register_editable_user_custom_field %i[see_signatures signature_url signature_raw]
+  register_editable_user_custom_field :see_signatures
+  register_editable_user_custom_field :signature_url
+  register_editable_user_custom_field :signature_raw
 
   allow_public_user_custom_field :signature_cooked
   allow_public_user_custom_field :signature_url
