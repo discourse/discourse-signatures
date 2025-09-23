@@ -2,7 +2,7 @@
 
 RSpec.describe "Image signatures", type: :system do
   fab!(:user)
-  fab!(:topic)
+  fab!(:topic) { Fabricate(:topic, category: Fabricate(:category)) }
   fab!(:post) { Fabricate(:post, topic:) }
   let(:signature_image_url) { "https://example.com/signature.png" }
 
@@ -16,6 +16,8 @@ RSpec.describe "Image signatures", type: :system do
     context "when signatures are visible by default" do
       before { SiteSetting.signatures_visible_by_default = true }
 
+      fab!(:post) { Fabricate(:post, topic:, user:, raw: "This is a test post with signature") }
+
       it "allows user to set an image signature and displays it below posts" do
         sign_in(user)
 
@@ -26,15 +28,12 @@ RSpec.describe "Image signatures", type: :system do
         expect(page).to have_field(placeholder: I18n.t("js.signatures.signature_placeholder"))
 
         check I18n.t("js.signatures.show_signatures")
-        fill_in placeholder: I18n.t("js.signatures.signature_placeholder"), with: signature_image_url
+        fill_in placeholder: I18n.t("js.signatures.signature_placeholder"),
+                with: signature_image_url
 
         click_button I18n.t("js.save")
         expect(page).to have_content(I18n.t("js.saved"))
 
-        user.reload
-
-        post = Fabricate(:post, topic:, user:, raw: "This is a test post with signature")
-        
         visit post.url
 
         expect(page).to have_css("img.signature-img[src='#{signature_image_url}']")
