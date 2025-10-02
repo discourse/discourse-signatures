@@ -4,7 +4,7 @@ RSpec.describe "Image signatures", type: :system do
   fab!(:user)
   fab!(:topic) { Fabricate(:topic, category: Fabricate(:category)) }
   fab!(:post) { Fabricate(:post, topic:) }
-  let(:signature_image_url) { "https://example.com/signature.png" }
+  let(:signature_image_url) { "data:abcdef," }
 
   context "when signatures plugin is enabled" do
     before do
