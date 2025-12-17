@@ -1,3 +1,15 @@
 .user-signature img {
   max-width: calc(100% - 5px);
 }
+
+.signature-preferences .d-editor {
+  width: 100%;
+
+  .d-editor-preview-wrapper {
+    display: none;
+  }
+
+  .d-editor-textarea-wrapper {
+    flex: 1;
+  }
+}
