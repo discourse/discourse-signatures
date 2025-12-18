@@ -47,7 +47,9 @@ export default class SignaturePreferences extends Component {
             }}</label>
           <div class="controls input-xxlarge">
             {{#if this.siteSettings.signatures_advanced_mode}}
-              <DEditor @value={{@outletArgs.model.custom_fields.signature_raw}} />
+              <DEditor
+                @value={{@outletArgs.model.custom_fields.signature_raw}}
+              />
             {{else}}
               <input
                 type="text"
