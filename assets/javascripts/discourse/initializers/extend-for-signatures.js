@@ -10,7 +10,7 @@ export default {
       withPluginApi((api) => {
         api.addTrackedPostProperties("user_signature");
         api.renderAfterWrapperOutlet("post-content-cooked-html", PostSignature);
-        api.addSaveableCustomFields({ page: "profile" });
+        api.addSaveableCustomFields("profile");
       });
     }
   },
