@@ -10,17 +10,14 @@ export default class SignaturePreferences extends Component {
 
   @action
   updateSeeSignatures(event) {
-    const model = this.args.outletArgs.model;
+    const model = this.args.model;
     model.set("see_signatures", event.target.checked);
     model.set("custom_fields.see_signatures", event.target.checked);
   }
 
   @action
   updateSignatureUrl(event) {
-    this.args.outletArgs.model.set(
-      "custom_fields.signature_url",
-      event.target.value
-    );
+    this.args.model.set("custom_fields.signature_url", event.target.value);
   }
 
   <template>
@@ -34,7 +31,7 @@ export default class SignaturePreferences extends Component {
             <label class="checkbox-label">
               <input
                 type="checkbox"
-                checked={{@outletArgs.model.see_signatures}}
+                checked={{@model.see_signatures}}
                 {{on "change" this.updateSeeSignatures}}
               />
               {{i18n "signatures.show_signatures"}}
@@ -47,14 +44,12 @@ export default class SignaturePreferences extends Component {
             }}</label>
           <div class="controls input-xxlarge">
             {{#if this.siteSettings.signatures_advanced_mode}}
-              <DEditor
-                @value={{@outletArgs.model.custom_fields.signature_raw}}
-              />
+              <DEditor @value={{@model.custom_fields.signature_raw}} />
             {{else}}
               <input
                 type="text"
                 placeholder={{i18n "signatures.signature_placeholder"}}
-                value={{@outletArgs.model.custom_fields.signature_url}}
+                value={{@model.custom_fields.signature_url}}
                 {{on "input" this.updateSignatureUrl}}
               />
             {{/if}}
