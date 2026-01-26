@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe "Image signatures", type: :system do
+RSpec.describe "Image signatures" do
   fab!(:user)
   fab!(:topic) { Fabricate(:topic, category: Fabricate(:category)) }
   fab!(:post) { Fabricate(:post, topic:) }
