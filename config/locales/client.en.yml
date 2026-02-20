@@ -5,3 +5,7 @@ en:
       show_signatures: "See user signatures below posts"
       my_signature: "My Signature"
       signature_placeholder: "A valid URL to an image"
+      not_allowed: "Your account is not in a group that is allowed to use signatures."
+      characters_remaining:
+        one: "%{count} character remaining"
+        other: "%{count} characters remaining"

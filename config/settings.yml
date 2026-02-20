@@ -8,3 +8,25 @@ plugins:
   signatures_visible_by_default:
     default: false
     client: true
+  signatures_allowed_groups:
+    type: group_list
+    list_type: compact
+    default: ""
+    allow_any: false
+    refresh: true
+  signatures_show_in_categories:
+    type: category_list
+    client: true
+    default: ""
+  signatures_first_post_only:
+    default: false
+    client: true
+  signatures_max_length:
+    default: 500
+    min: 50
+    max: 10000
+  signatures_max_image_height:
+    default: 150
+    min: 20
+    max: 1000
+    client: true
