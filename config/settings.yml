@@ -8,3 +8,9 @@ plugins:
   signatures_visible_by_default:
     default: false
     client: true
+  signatures_user_enabled_by_default:
+    default: true
+    client: true
+  signatures_links_open_in_new_tab:
+    default: false
+    client: true

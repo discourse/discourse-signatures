@@ -8,4 +8,6 @@ zh_CN:
   site_settings:
     signatures_enabled: "在帖子下方启用用户签名？"
     signatures_advanced_mode: "让用户使用功能齐全的帖子编辑器来创建签名。重置所有现有签名。"
-    signatures_visible_by_default: "默认情况下使签名可见。这使匿名访问者也可以看到签名。"
+    signatures_visible_by_default: "默认向匿名访问者显示签名。"
+    signatures_user_enabled_by_default: "默认为新用户启用'在帖子下方显示用户签名'选项。启用后，新用户的个人资料中此选项将默认打勾。"
+    signatures_links_open_in_new_tab: "在新标签页/窗口中打开签名中的链接。"
