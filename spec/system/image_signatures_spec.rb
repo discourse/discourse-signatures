@@ -7,7 +7,7 @@ RSpec.describe "Image signatures" do
   let(:signature_image_url) do
     "http://#{Discourse.current_hostname}/images/discourse-logo-sketch-small.png"
   end
-  
+
   context "when signatures plugin is enabled" do
     before do
       enable_current_plugin
