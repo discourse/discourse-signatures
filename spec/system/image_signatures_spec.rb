@@ -4,8 +4,10 @@ RSpec.describe "Image signatures" do
   fab!(:user)
   fab!(:topic) { Fabricate(:topic, category: Fabricate(:category)) }
   fab!(:post) { Fabricate(:post, topic:) }
-  let(:signature_image_url) { "http://#{Discourse.current_hostname}/images/discourse-logo-sketch-small.png" }
-
+  let(:signature_image_url) do
+    "http://#{Discourse.current_hostname}/images/discourse-logo-sketch-small.png"
+  end
+  
   context "when signatures plugin is enabled" do
     before do
       enable_current_plugin
