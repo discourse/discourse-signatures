@@ -3,3 +3,8 @@ en:
     signatures_enabled: "Enable user-made signatures below posts?"
     signatures_advanced_mode: "Let users use a full blown post editor to create signatures. RESETS all existing signatures."
     signatures_visible_by_default: "Make signatures visible by default. This makes signatures visible for anonymous visitors as well."
+    signatures_allowed_groups: "Only allow users in these groups to have signatures. Leave empty to allow all users."
+    signatures_show_in_categories: "Only show signatures in these categories. Leave empty to show in all categories."
+    signatures_first_post_only: "Only show signatures on the first post in a topic."
+    signatures_max_length: "Maximum number of characters allowed in advanced mode signatures."
+    signatures_max_image_height: "Maximum height in pixels for signature images."
