@@ -11,3 +11,5 @@ ja:
       show_signatures: "投稿下のユーザー署名を参照"
       my_signature: "自分の署名"
       signature_placeholder: "画像の有効な URL"
+      characters_remaining:
+        other: "残り %{count} 文字"
