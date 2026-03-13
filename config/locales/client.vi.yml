@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 vi:
+  js:
+    signatures:
+      characters_remaining:
+        other: "%{count} ký tự còn lại"
