@@ -149,7 +149,7 @@ acceptance("Acceptance | decorateCookedSignature", function (needs) {
     await visit("/t/topic-with-signature/999");
 
     assert.true(decoratorCalled, "decorator was called");
-    
+
     assert.notStrictEqual(
       receivedElement,
       null,
