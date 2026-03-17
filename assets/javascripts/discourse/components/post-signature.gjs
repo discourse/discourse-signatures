@@ -2,6 +2,7 @@ import Component from "@glimmer/component";
 import { service } from "@ember/service";
 import { trustHTML } from "@ember/template";
 import DecoratedHtml from "discourse/components/decorated-html";
+import { bind } from "discourse/lib/decorators";
 
 let _signatureDecorators = [];
 
@@ -55,11 +56,12 @@ export default class PostSignature extends Component {
     return `max-height: ${this.siteSettings.signatures_max_image_height}px`;
   }
 
-  decorateSignature = (element, helper) => {
+  @bind
+  decorateSignature(element, helper) {
     _signatureDecorators.forEach((decorator) => {
       decorator(element, helper, this.args.post);
     });
-  };
+  }
 
   <template>
     <hr />

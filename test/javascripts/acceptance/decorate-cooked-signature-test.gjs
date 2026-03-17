@@ -67,8 +67,7 @@ acceptance("Acceptance | decorateCookedSignature", function (needs) {
               edit_reason: null,
               can_view_edit_history: true,
               wiki: false,
-              user_signature:
-                "<p>My <strong>awesome</strong> signature</p>",
+              user_signature: "<p>My <strong>awesome</strong> signature</p>",
             },
           ],
           stream: [1],
@@ -150,8 +149,19 @@ acceptance("Acceptance | decorateCookedSignature", function (needs) {
     await visit("/t/topic-with-signature/999");
 
     assert.true(decoratorCalled, "decorator was called");
-    assert.ok(receivedElement, "element was passed to decorator");
-    assert.ok(receivedPost, "post was passed to decorator");
+    
+    assert.notStrictEqual(
+      receivedElement,
+      null,
+      "element was passed to decorator"
+    );
+
+    assert.strictEqual(
+      receivedPost.topic_slug,
+      "topic-with-signature",
+      "correct post was passed to decorator"
+    );
+
     assert.strictEqual(
       receivedPost.user_signature,
       "<p>My <strong>awesome</strong> signature</p>",
@@ -183,11 +193,7 @@ acceptance("Acceptance | decorateCookedSignature", function (needs) {
       ["first", "second"],
       "decorators called in registration order"
     );
-    assert
-      .dom(".user-signature[data-first-decorator='applied']")
-      .exists();
-    assert
-      .dom(".user-signature[data-second-decorator='applied']")
-      .exists();
+    assert.dom(".user-signature[data-first-decorator='applied']").exists();
+    assert.dom(".user-signature[data-second-decorator='applied']").exists();
   });
 });
