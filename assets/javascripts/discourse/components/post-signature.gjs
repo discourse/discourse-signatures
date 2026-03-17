@@ -1,6 +1,17 @@
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
-import { htmlSafe } from "@ember/template";
+import { trustHTML } from "@ember/template";
+import DecoratedHtml from "discourse/components/decorated-html";
+
+let _signatureDecorators = [];
+
+export function addSignatureDecorator(decorator) {
+  _signatureDecorators.push(decorator);
+}
+
+export function resetSignatureDecorators() {
+  _signatureDecorators = [];
+}
 
 export default class PostSignature extends Component {
   static shouldRender(args, context) {
@@ -44,14 +55,20 @@ export default class PostSignature extends Component {
     return `max-height: ${this.siteSettings.signatures_max_image_height}px`;
   }
 
+  decorateSignature = (element, helper) => {
+    _signatureDecorators.forEach((decorator) => {
+      decorator(element, helper, this.args.post);
+    });
+  };
+
   <template>
     <hr />
     {{#if this.isAdvancedModeEnabled}}
-      <div>
-        <div class="user-signature">
-          {{htmlSafe @post.user_signature}}
-        </div>
-      </div>
+      <DecoratedHtml
+        @html={{trustHTML @post.user_signature}}
+        @decorate={{this.decorateSignature}}
+        @className="user-signature"
+      />
     {{else}}
       <img
         class="signature-img"
