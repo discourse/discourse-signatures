@@ -11,3 +11,7 @@ tr_TR:
       show_signatures: "Gönderilerin altındaki kullanıcı imzalarına bakın"
       my_signature: "İmzam"
       signature_placeholder: "Bir görüntü için geçerli bir URL"
+      not_allowed: "Hesabınız, imza kullanma izni olan bir gruba dahil değil."
+      characters_remaining:
+        one: "%{count} karakter kaldı"
+        other: "%{count} karakter kaldı"

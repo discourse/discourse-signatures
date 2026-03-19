@@ -9,3 +9,8 @@ tr_TR:
     signatures_enabled: "Gönderilerin altında kullanıcıların hazırladığı imzalar etkinleştirilsin mi?"
     signatures_advanced_mode: "Kullanıcıların imza oluşturmak için tam gelişmiş bir yazı editörü kullanmasına izin verin. Mevcut tüm imzaları SIFIRLAR."
     signatures_visible_by_default: "İmzaları varsayılan olarak görünür yapın. Bu, imzaları anonim ziyaretçiler için de görünür hale getirir."
+    signatures_allowed_groups: "Yalnızca bu gruplardaki kullanıcıların imza kullanmasına izin verin. Tüm kullanıcıların kullanmasına izin vermek için bu alanı boş bırakın."
+    signatures_show_in_categories: "Yalnızca bu kategorilerdeki imzaları göster. Tüm kategorilerde göstermek için boş bırak."
+    signatures_first_post_only: "Bir konudaki ilk mesajda yalnızca imzaları göster."
+    signatures_max_length: "Gelişmiş modda imzalar için izin verilen maksimum karakter sayısı."
+    signatures_max_image_height: "İmza resimleri için maksimum piksel yüksekliği."
