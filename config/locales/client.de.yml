@@ -11,3 +11,7 @@ de:
       show_signatures: "Benutzersignaturen unter Beiträgen anzeigen"
       my_signature: "Meine Signatur"
       signature_placeholder: "Eine gültige URL zu einem Bild"
+      not_allowed: "Dein Konto gehört keiner Gruppe an, die zur Verwendung von Signaturen berechtigt ist."
+      characters_remaining:
+        one: "%{count} Zeichen verbleibend"
+        other: "%{count} Zeichen verbleibend"
