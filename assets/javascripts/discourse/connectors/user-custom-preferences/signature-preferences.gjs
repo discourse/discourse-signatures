@@ -1,13 +1,17 @@
 import Component from "@glimmer/component";
+import { tracked } from "@glimmer/tracking";
 import { on } from "@ember/modifier";
 import { action } from "@ember/object";
 import { service } from "@ember/service";
 import DEditor from "discourse/components/d-editor";
+import withEventValue from "discourse/helpers/with-event-value";
 import { i18n } from "discourse-i18n";
 
 export default class SignaturePreferences extends Component {
   @service currentUser;
   @service siteSettings;
+
+  @tracked _signatureRaw = this.args.model.custom_fields?.signature_raw || "";
 
   get canHaveSignature() {
     return this.currentUser?.can_have_signature !== false;
@@ -18,8 +22,7 @@ export default class SignaturePreferences extends Component {
   }
 
   get charactersRemaining() {
-    const raw = this.args.model.custom_fields?.signature_raw || "";
-    return this.maxLength - raw.length;
+    return this.maxLength - this._signatureRaw.length;
   }
 
   @action
@@ -32,6 +35,12 @@ export default class SignaturePreferences extends Component {
   @action
   updateSignatureUrl(event) {
     this.args.model.set("custom_fields.signature_url", event.target.value);
+  }
+
+  @action
+  updateRawSignature(value) {
+    this._signatureRaw = value;
+    this.args.model.set("custom_fields.signature_raw", value);
   }
 
   <template>
@@ -59,7 +68,10 @@ export default class SignaturePreferences extends Component {
               }}</label>
             <div class="controls input-xxlarge">
               {{#if this.siteSettings.signatures_advanced_mode}}
-                <DEditor @value={{@model.custom_fields.signature_raw}} />
+                <DEditor
+                  @value={{@model.custom_fields.signature_raw}}
+                  @change={{withEventValue this.updateRawSignature}}
+                />
                 <span class="signature-char-count">
                   {{i18n
                     "signatures.characters_remaining"
