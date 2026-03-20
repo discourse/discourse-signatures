@@ -9,3 +9,8 @@ de:
     signatures_enabled: "Von Benutzern erstellte Signaturen unter Beiträgen aktivieren?"
     signatures_advanced_mode: "Erlaubt es Benutzern, einen vollständigen Beitragseditor zu verwenden, um Signaturen zu erstellen. SETZT alle bestehenden Signaturen ZURÜCK."
     signatures_visible_by_default: "Signaturen standardmäßig sichtbar machen. Dadurch sind die Signaturen auch für anonyme Besucher sichtbar."
+    signatures_allowed_groups: "Erlaube nur Benutzern in diesen Gruppen, Signaturen zu haben. Lasse das Feld leer, damit alle Benutzer sie verwenden können."
+    signatures_show_in_categories: "Zeige Signaturen nur in diesen Kategorien. Lasse das Feld leer, um sie in allen Kategorien anzuzeigen."
+    signatures_first_post_only: "Zeige Signaturen nur im ersten Beitrag eines Themas an."
+    signatures_max_length: "Maximale Anzahl zulässiger Zeichen in Signaturen im erweiterten Modus."
+    signatures_max_image_height: "Maximale Höhe in Pixeln für Signaturbilder."
