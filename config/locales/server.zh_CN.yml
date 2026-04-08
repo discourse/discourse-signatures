@@ -9,3 +9,8 @@ zh_CN:
     signatures_enabled: "在帖子下方启用用户签名？"
     signatures_advanced_mode: "让用户使用功能齐全的帖子编辑器来创建签名。重置所有现有签名。"
     signatures_visible_by_default: "默认情况下使签名可见。这使匿名访问者也可以看到签名。"
+    signatures_allowed_groups: "仅允许这些群组内的用户使用签名。留空将允许所有用户使用签名。"
+    signatures_show_in_categories: "仅显示这些类别中的签名。留空将显示所有类别。"
+    signatures_first_post_only: "仅在话题的第一个帖子中显示签名。"
+    signatures_max_length: "高级模式签名允许的最大字符数。"
+    signatures_max_image_height: "签名图片的最大高度（以像素为单位）。"

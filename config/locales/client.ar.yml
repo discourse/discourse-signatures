@@ -11,3 +11,11 @@ ar:
       show_signatures: "عرض توقيعات المستخدمين أسفل المنشورات"
       my_signature: "توقيعي"
       signature_placeholder: "عنوان URL صالح لصورة"
+      not_allowed: "حسابك ليس ضمن مجموعة مسموح لها باستخدام التوقيعات."
+      characters_remaining:
+        zero: "متبقي %{count} من الحروف"
+        one: "متبقي حرف واحد %{count}"
+        two: "متبقي حرفان %{count}"
+        few: "متبقي %{count} أحرف"
+        many: "متبقي %{count} حرفًا"
+        other: "متبقي %{count} حرف"

@@ -11,3 +11,7 @@ es:
       show_signatures: "Ver las firmas de los usuarios debajo de las publicaciones"
       my_signature: "Mi firma"
       signature_placeholder: "Una URL válida para una imagen"
+      not_allowed: "Tu cuenta no pertenece a un grupo autorizado para usar firmas."
+      characters_remaining:
+        one: "Queda %{count} carácter"
+        other: "Quedan %{count} caracteres"
