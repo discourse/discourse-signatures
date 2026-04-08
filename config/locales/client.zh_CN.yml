@@ -11,5 +11,6 @@ zh_CN:
       show_signatures: "在帖子下方显示用户签名"
       my_signature: "我的签名"
       signature_placeholder: "图像的有效 URL"
+      not_allowed: "您的帐户不在可以使用签名的群组中。"
       characters_remaining:
         other: "剩余 %{count} 个字符"

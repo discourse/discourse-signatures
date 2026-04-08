@@ -9,3 +9,8 @@ es:
     signatures_enabled: "¿Activar que aparezcan firmas de los usuarios debajo de sus publicaciones?"
     signatures_advanced_mode: "Permite a los usuarios utilizar un editor de publicaciones completo para crear firmas. REINICIA todas las firmas existentes."
     signatures_visible_by_default: "Hace que las firmas sean visibles por defecto. Esto hace que las firmas también sean visibles para los visitantes anónimos."
+    signatures_allowed_groups: "Permite las firmas solo a los usuarios de estos grupos. Déjalo en blanco para permitir a todos los usuarios."
+    signatures_show_in_categories: "Muestra las firmas solo en estas categorías. Déjalo en blanco para mostrarlas en todas las categorías."
+    signatures_first_post_only: "Muestra las firmas únicamente en la primera publicación de un tema."
+    signatures_max_length: "Número máximo de caracteres permitidos en las firmas del modo avanzado."
+    signatures_max_image_height: "Altura máxima en píxeles para las imágenes de firma."
