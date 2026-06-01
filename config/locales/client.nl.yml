@@ -11,3 +11,7 @@ nl:
       show_signatures: "Zie handtekeningen van gebruikers onder berichten"
       my_signature: "Mijn handtekening"
       signature_placeholder: "Een geldige URL naar een afbeelding"
+      not_allowed: "Je account bevindt zich niet in een groep die handtekeningen mag gebruiken."
+      characters_remaining:
+        one: "%{count} teken resterend"
+        other: "%{count} tekens resterend"
