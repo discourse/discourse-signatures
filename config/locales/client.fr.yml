@@ -8,6 +8,10 @@ fr:
   js:
     signatures:
       enable_signatures: "Activer les signatures"
-      show_signatures: "Voir les signatures des utilisateurs sous les messages"
+      show_signatures: "Voir les signatures des utilisateurs sous les publications"
       my_signature: "Ma signature"
       signature_placeholder: "Une URL valide vers une image"
+      not_allowed: "Votre compte n'appartient à aucun groupe autorisé à utiliser les signatures."
+      characters_remaining:
+        one: "%{count} caractère restant"
+        other: "%{count} caractères restants"
